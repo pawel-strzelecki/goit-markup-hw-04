@@ -71,6 +71,7 @@ a:active {
 .logo-footer {
   color: #ffffff;
 }
+
 .footer-padding {
   padding-bottom: 20px;
 }
@@ -94,6 +95,39 @@ nav {
   display: flex;
   justify-content: end;
   gap: 50px;
+}
+
+.contacts-box {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.contacts-icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-secondary-color);
+  padding-right: 10px;
+}
+
+.contacts-icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-secondary-color);
+  padding-right: 10px;
+}
+
+.contacts-icon-mail:hover {
+  fill: var(--highlight-color);
+}
+
+.contacts-icon-tel:hover {
+  fill: var(--highlight-color);
 }
 
 .banner {
@@ -147,6 +181,22 @@ nav {
   font-size: 14px;
   line-height: 1.7;
   padding-top: 10px;
+}
+
+.article-box {
+  border-radius: 4px;
+  background:#F5F4FA;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.article-icons {
+  width: 70px;
+  height: 70px;
 }
 
 .section-header {
@@ -203,6 +253,10 @@ img {
   color: var(--text-secondary-color);
 }
 
+.clients-list {
+  list-style: none;
+  display: flex;
+}
 .bottom {
   padding-top: 60px;
   padding-bottom: 60px;
