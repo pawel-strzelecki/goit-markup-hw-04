@@ -4,6 +4,9 @@
   --button-color: #f5f4fa;
   --highlight-color: #2196f3;
   --mail-tel-bottom-color: rgba(255, 255, 255, 0.6);
+  --secondary-icon-color: rgba(255, 255, 255, 0.1);
+  --main-icon-color: #AFB1B8;
+ 
 }
 
 body {
@@ -62,6 +65,7 @@ a:active {
   font-size: 26px;
   line-height: 1.17;
   color: #2196f3;
+  display: inline-block;
 }
 
 .logo-menu {
@@ -226,6 +230,51 @@ img {
   background-color: #f5f4fa;
 }
 
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  gap: 10px;
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  fill: var(--main-icon-color);
+  background-clip: content-box;
+}
+
+.social-icons:hover {
+  fill: #FFFFFF;
+  cursor: pointer;
+}
+
+.social-border {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-border:hover {
+  background-color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.footer-links {
+  border: 1px hidden var(--secondary-icon-color);
+  background-color: var(--secondary-icon-color);
+}
+
+.footer-icons {
+  fill: #ffffff;
+}
+
 .team-images {
   display: flex;
   padding-top: 50px;
@@ -256,7 +305,39 @@ img {
 .clients-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  gap: 30px;
 }
+
+.clients-box {
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-box:hover {
+  border: 1px solid var(--highlight-color);
+  cursor: pointer;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  padding: 15px 30px;
+  fill: #AFB1B8;
+  background-clip: content-box;
+}
+
+.clients-icon:hover {
+  fill: var(--highlight-color);
+  cursor: pointer;
+}
+
 .bottom {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -269,6 +350,7 @@ img {
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
+  /* display: inline-block; */
 }
 
 .bottom-mail {
@@ -281,6 +363,19 @@ img {
 .bottom-tel {
   color: var(--mail-tel-bottom-color);
   justify-content: flex-start;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-join-us {
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-filters {
@@ -316,7 +411,6 @@ img {
   border-bottom: solid 1px #eeeeee;
   padding: 20px 24px 20px 24px;
 }
-
 
 .portfolio-button {
   background-color: var(--button-color);
