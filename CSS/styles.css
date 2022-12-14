@@ -126,11 +126,10 @@ nav {
   padding-right: 10px;
 }
 
-.contacts-icon-mail:hover {
-  fill: var(--highlight-color);
-}
-
-.contacts-icon-tel:hover {
+.contacts-icon-mail:hover,
+.contacts-icon-tel:hover,
+.contacts-icon-mail:focus,
+.contacts-icon-tel:focus {
   fill: var(--highlight-color);
 }
 
@@ -339,18 +338,22 @@ img {
 }
 
 .bottom {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
   color: #ffffff;
   line-height: 1.7;
 }
 
+.footer-contacts {
+  display: inline-block;
+  padding-top: 60px;
+}
+
 .studio-address {
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
-  /* display: inline-block; */
 }
 
 .bottom-mail {
@@ -371,11 +374,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 4px;
 }
 
 .footer-join-us {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  padding: 0px 0px 0px 70px;
 }
 
 .portfolio-filters {
