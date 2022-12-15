@@ -21,20 +21,26 @@
   <body>
     <header>
       <section class="menu">
-        <div class="container menu-flex header-padding">
+        <div class="container menu-flex header-padding header-border">
           <div class="menu-flex">
             <div class="logo">
              <a href="index.html">Web<span class="logo-menu">Studio</span></a>
             </div>
             <nav>
-          <a class="nav-link" href="#">Agencja</a>
-          <a class="nav-link" href="#">Portfolio</a>
-          <a class="nav-link" href="#">Kontakt</a>
-        </nav>
+              <a class="nav-link" href="#">Agencja</a>
+              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">Kontakt</a>
+           </nav>
       </div>
         <div class="contacts">
-          <a href="mailto:info@devstudio.com"><span>info@devstudio.com</span></a>
-          <a href="tel:+48111111111"><span>+48 111 111 111</span></a>
+          <div class="contacts-box">
+          <a class="contacts-link" href="mailto:info@devstudio.com">
+            <svg class="contacts-icon-mail">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+          <a  class="contacts-link" href="tel:+48111111111"><svg class="contacts-icon-tel">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>+48 111 111 111</a>
         </div>
       </div>
       </section>
@@ -178,6 +184,7 @@
     <footer>
       <section class="bottom">
         <div class="container">
+          <div class="footer-contacts">
         <div class="logo footer-padding">
           <a href="#">Web<span class="logo-footer">Studio</span></a>
         </div>
@@ -187,6 +194,40 @@
           </div>
           <div class="contacts bottom-tel">
           <a href="tel:+48111111111">+48 111 111 111</a>
+          </div>
+        </div>
+          <div class="footer-join-us">
+            <h4 class="footer-text">DOŁĄCZ DO NAS</h4>
+            <ul class="social-links">
+              <li>
+                <div class="social-border footer-links">
+            <svg class="social-icons footer-icons">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </div>
+          </li>
+          <li>
+            <div class="social-border footer-links">
+            <svg class="social-icons footer-icons">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </div>
+          </li>
+          <li>
+            <div class="social-border footer-links">
+            <svg class="social-icons footer-icons">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </div>
+          </li>
+          <li>
+            <div class="social-border footer-links">
+            <svg class="social-icons footer-icons">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </div>
+          </li>
+          </ul>
           </div>
         </div>
       </section>

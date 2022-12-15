@@ -1,6 +1,7 @@
 :root {
   --text-secondary-color: #757575;
   --secondary-background-color: #2f303a;
+  --secondary-background-color-transparent: rgba(47, 48, 58, 0.4);
   --button-color: #f5f4fa;
   --highlight-color: #2196f3;
   --mail-tel-bottom-color: rgba(255, 255, 255, 0.6);
@@ -134,7 +135,14 @@ nav {
 }
 
 .banner {
-  background: var(--secondary-background-color);
+  background: linear-gradient(
+    var(--secondary-background-color-transparent),
+    var(--secondary-background-color-transparent)
+  ),
+  url(../images/banner-photo.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .banner-text {
@@ -399,7 +407,11 @@ img {
 }
 
 .portfolio-card {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-name {
