@@ -30,6 +30,15 @@ a:active {
   color: var(--highlight-color);
 }
 
+.highlight {
+  color: currentColor;
+}
+
+.highlight:hover,
+.highlight:focus {
+  color: var(--highlight-color);
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -115,14 +124,14 @@ nav {
 .contacts-icon-mail {
   width: 16px;
   height: 12px;
-  fill: var(--text-secondary-color);
+  fill: currentColor;
   padding-right: 10px;
 }
 
 .contacts-icon-tel {
   width: 10px;
   height: 16px;
-  fill: var(--text-secondary-color);
+  fill: currentColor;
   padding-right: 10px;
 }
 
@@ -244,41 +253,36 @@ img {
   gap: 10px;
 }
 
-.social-icons {
-  width: 20px;
-  height: 20px;
-  padding: 10px;
-  fill: var(--main-icon-color);
-  background-clip: content-box;
-}
-
-.social-icons:hover {
-  fill: #ffffff;
-  cursor: pointer;
-}
-
-.social-border {
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
+.social-links-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-border:hover {
+.social-icons {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  fill: currentColor;
+}
+
+.social-border {
+  display: flex;
+  padding: 12px;
+  color: var(--main-icon-color);
+  border-radius: 50%;
+}
+
+.social-border:hover,
+.social-border:focus {
   background-color: var(--highlight-color);
-  cursor: pointer;
+  color: var(--button-color);
 }
 
 .footer-links {
   border: 1px hidden var(--secondary-icon-color);
   background-color: var(--secondary-icon-color);
-}
-
-.footer-icons {
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .team-images {
@@ -318,34 +322,34 @@ img {
 }
 
 .clients-box {
-  border: 1px solid var(--main-icon-color);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients-box:hover {
+.clients-border {
+  border: 1px solid var(--main-icon-color);
+  color: var(--main-icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-border:hover,
+.clients-border:focus {
   border: 1px solid var(--highlight-color);
-  cursor: pointer;
+  fill: var(--highlight-color);
 }
 
 .clients-icon {
   width: 106px;
   height: 60px;
   padding: 15px 30px;
-  fill: #afb1b8;
-  background-clip: content-box;
-}
-
-.clients-icon:hover {
-  fill: var(--highlight-color);
-  cursor: pointer;
+  fill: currentColor;
 }
 
 .bottom {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
   color: #ffffff;
@@ -354,7 +358,6 @@ img {
 
 .footer-contacts {
   display: inline-block;
-  padding-top: 60px;
 }
 
 .studio-address {
@@ -412,6 +415,7 @@ img {
 .portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfolio-name {
