@@ -262,7 +262,6 @@ img {
 .social-icons {
   width: 20px;
   height: 20px;
-  display: flex;
   fill: currentColor;
 }
 
@@ -356,6 +355,10 @@ img {
   line-height: 1.7;
 }
 
+.footer-flex {
+  display: flex;
+}
+
 .footer-contacts {
   display: inline-block;
 }
@@ -363,7 +366,6 @@ img {
 .studio-address {
   font-style: normal;
   font-size: 14px;
-  font-weight: 400;
 }
 
 .bottom-mail {
@@ -389,7 +391,7 @@ img {
 
 .footer-join-us {
   display: inline-block;
-  padding: 0px 0px 0px 70px;
+  padding: 12px 0px 0px 70px;
 }
 
 .portfolio-filters {
